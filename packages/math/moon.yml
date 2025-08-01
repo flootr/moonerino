@@ -1,5 +1,8 @@
 language: typescript
-
 tasks:
   build:
-    command: rolldown -c ./rolldown.config.mjs
+    command:
+    - rolldown
+    - '-c'
+    - rolldown.config.mjs
+    toolchain: node

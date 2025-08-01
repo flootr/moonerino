@@ -6,10 +6,12 @@ settings:
 
 importers:
 
+  .: {}
+
   apps/client:
     dependencies:
       '@flootr/math':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../../packages/math
       react:
         specifier: ^19.1.0

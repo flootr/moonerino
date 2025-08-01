@@ -1,8 +1,25 @@
-tasks:
-  dev:
-    command: "vite"
-  build:
-    command: "pnpm run build"
-
 dependsOn:
-  - "@flootr/math"
+- '@flootr/math'
+- math
+tasks:
+  build:
+    command:
+    - vite
+    - build
+    deps:
+    - ~:build-dep1
+    toolchain: node
+  build-dep1:
+    command:
+    - tsc
+    - '-b'
+    toolchain: node
+  dev:
+    command: vite
+    local: true
+    toolchain: node
+  lint:
+    command:
+    - eslint
+    - '.'
+    toolchain: node

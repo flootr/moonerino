@@ -1,0 +1,5 @@
+node:
+  version: "24"
+  packageManager: "pnpm"
+  pnpm: {}
+  syncProjectWorkspaceDependencies: true

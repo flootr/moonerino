@@ -1,6 +1,8 @@
 tasks:
   dev:
     command: "vite"
+  build:
+    command: "pnpm run build"
 
 dependsOn:
   - "@flootr/math"
